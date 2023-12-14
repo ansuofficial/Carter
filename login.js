@@ -9,7 +9,7 @@ const data = [
   },
   {
     username: "Amadou",
-    id: "ST178",
+    id: "ST179",
   },
 ];
 
@@ -21,7 +21,7 @@ const submit = document.querySelector(".login")
 function handler() {
     submit.addEventListener('click', () => {
         data.map( (d) => {
-           if(userName.value == d.username) {
+           if(userName.value == d.username && psw.value == d.id) {
             console.log('Success')
            } else {
             console.log('try again')
