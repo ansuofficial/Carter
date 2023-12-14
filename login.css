@@ -1,3 +1,43 @@
 label {
     display: block;
 }
+
+.form-container {
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    max-width: 900px;
+    width: 50%;
+    height: 50%;
+}
+
+form h1 {
+    background: aqua;
+    color: white;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+form label {
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+}
+
+form input {
+    border: 1px solid slategray;
+    border-radius: .5rem;
+    outline: none;
+    margin-bottom: 1.5rem;
+    padding: .75rem 1rem;
+}
