@@ -11,22 +11,22 @@ label {
 
 form {
     align-items: center;
+    box-shadow:2px 2px 5px aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid;
     max-width: 900px;
     width: 50%;
-    height: 50%;
+    transition: .5s;
+}
+
+form:hover {
+    box-shadow:2px 2px 5px deeppink;
+    scale: 1.01;
 }
 
 form h1 {
-    background: aqua;
-    color: white;
-    width: 100%;
     font-size: 4rem;
-    font-weight: 500;
-    text-align: center;
 }
 
 form label {
@@ -40,4 +40,16 @@ form input {
     outline: none;
     margin-bottom: 1.5rem;
     padding: .75rem 1rem;
+}
+
+.login {
+    background: aqua;
+    padding: .75rem 2rem;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.login:hover {
+    background: rgb(43, 150, 150);
+
 }
