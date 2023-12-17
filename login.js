@@ -14,20 +14,39 @@ const data = [
 ];
 
 const psw = document.querySelector("#password");
-const userName = document.querySelector("#username")
+const userName = document.querySelector("#username");
 
-const submit = document.querySelector(".login")
+const submit = document.querySelector(".login");
 
 function handler() {
-    submit.addEventListener('click', () => {
-        data.map( (d) => {
-           if(userName.value == d.username && psw.value == d.id) {
-            console.log('Success')
-           } else {
-            console.log('try again')
-           }
-        })
-    })
+  submit.addEventListener("click", () => {
+    console.log(userName.value, psw.value);
+
+    let is_true = false;
+
+    for (let i = 0; i < data.length; i++) {
+      if (userName.value == data[i].username && psw.value == data[i].id) {
+        is_true = true;
+        break;
+      } else {
+        is_true = false;
+      }
+    }
+
+    // const result = data.find((d) => {
+    //   if (userName.value == d.username && psw.value == d.id) {
+    //     return true;
+    //   } else {
+    //     return false;
+    //   }
+    // });
+
+    if (is_true) {
+      console.log("Success");
+    } else {
+      console.log("try again");
+    }
+  });
 }
 
-handler()
+handler();
