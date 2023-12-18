@@ -20,28 +20,28 @@ const submit = document.querySelector(".login");
 
 function handler() {
   submit.addEventListener("click", () => {
-    console.log(userName.value, psw.value);
+    // console.log(userName.value, psw.value);
 
-    let is_true = false;
+    // let is_true = false;
 
-    for (let i = 0; i < data.length; i++) {
-      if (userName.value == data[i].username && psw.value == data[i].id) {
-        is_true = true;
-        break;
-      } else {
-        is_true = false;
-      }
-    }
-
-    // const result = data.find((d) => {
-    //   if (userName.value == d.username && psw.value == d.id) {
-    //     return true;
+    // for (let i = 0; i < data.length; i++) {
+    //   if (userName.value == data[i].username && psw.value == data[i].id) {
+    //     is_true = true;
+    //     break;
     //   } else {
-    //     return false;
+    //     is_true = false;
     //   }
-    // });
+    // }
 
-    if (is_true) {
+    const result = data.find((d) => {
+      if (userName.value == d.username && psw.value == d.id) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+
+    if (result) {
       console.log("Success");
     } else {
       console.log("try again");
