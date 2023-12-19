@@ -39,12 +39,7 @@ function handler() {
 
     if (result) {
      form.classList.toggle('hide')
-     const html = `
-        <div>
-            <h1>Hi admin</h1>
-        </div>
-        
-     `
+     const html =
 
     } else {
       console.log("try again");
