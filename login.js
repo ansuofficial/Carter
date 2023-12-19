@@ -39,7 +39,7 @@ function handler() {
 
     if (result) {
      form.classList.toggle('hide')
-     form.classList.toggle("hide");
+     admin.classList.toggle("hide");
      
     } else {
       console.log("try again");
