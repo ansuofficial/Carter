@@ -53,3 +53,7 @@ form input {
     background: rgb(43, 150, 150);
 
 }
+
+.hide {
+    display: none
+}

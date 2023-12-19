@@ -17,9 +17,10 @@ const data = [
   },
 ];
 
-let admin = document.querySelector('#admin')
-let body = document.querySelector("body");
+let admin = document.querySelector("#admin")
+let form = document.querySelector("#form");
 
+console.log(admin)
 const psw = document.querySelector("#password");
 const userName = document.querySelector("#username");
 
@@ -37,7 +38,15 @@ function handler() {
     });
 
     if (result) {
-     return body
+     form.classList.toggle('hide')
+     const html = `
+        <div>
+            <h1>Hi admin</h1>
+        </div>
+        
+     `
+     .adjece;
+
 
     } else {
       console.log("try again");
