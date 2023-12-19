@@ -45,7 +45,6 @@ function handler() {
         </div>
         
      `
-     .adjece;
 
     } else {
       console.log("try again");
