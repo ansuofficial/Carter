@@ -39,7 +39,6 @@ function handler() {
 
     if (result) {
      form.classList.toggle('hide')
-     const html =
 
     } else {
       console.log("try again");
