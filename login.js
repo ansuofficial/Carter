@@ -28,21 +28,11 @@ const userName = document.querySelector("#username");
 
 const submit = document.querySelector(".login");
 
-function handler() {
-  submit.addEventListener("click", () => {
-    const result = data.find((d) => {
-      console.log(d.role)
-      if (userName.value == d.username && psw.value == d.id && d.role == "Admin") {
-        return true;
-      } else {
-        return false;
-      }
-    });
 
-    if (result) {
-     form.classList.toggle('hide')
-     admin.classList.toggle('hide')
-     let html = ` 
+const displayAdmin = () => {
+  form.classList.toggle("hide");
+  admin.classList.toggle("hide");
+  let html = ` 
      <div class="side-bar">
       <div class="side-bar-container">
         <div class="side-bar-content">
@@ -55,20 +45,37 @@ function handler() {
           <div class="side-bar-items">
           <h3>Pages</h3>
             <ul>
-              <li>Add new user</li>
-              <li>Transaction history</li>
-              <li>Edit profile</li>
-              <li>Home</li>
+              <li><i class="bi bi-person"></i> <span>Add new user</span></li>
+              <li><i class="bi bi-person"></i> <span>Add new user</span></li>
+              <li><i class="bi bi-person"></i> <span>Add new user</span></li>
+              <li><i class="bi bi-person"></i> <span>Add new user</span></li>
+              <li><i class="bi bi-person"></i> <span>Add new user</span></li>
             </ul>
           </div>
         </div>
       </div>
      </div>
      `;
-     admin.insertAdjacentHTML("afterbegin", html)
-     
+  admin.insertAdjacentHTML("afterbegin", html);
+};
+
+function handler() {
+  submit.addEventListener("click", () => {
+    const result = data.find((d) => {
+      console.log(d.role)
+      if (userName.value == d.username && psw.value == d.id && d.role == "Admin") {
+        return true;
+      } else {
+        return false;
+      }
+    });
+
+    if (result) {
+     displayAdmin()
     } else {
       error.classList.remove('hide')
+      psw.value = ""
+      userName.value = ""
     }
   });
 }

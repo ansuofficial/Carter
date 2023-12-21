@@ -73,6 +73,7 @@ form input {
     max-width: 50%;
     padding: 2rem 0;
     transition: .2s ease-in;
+    position: fixed;
 }
 
 .image-con {
@@ -88,6 +89,10 @@ form input {
     width: 20%;
 }
 
+.side-bar:hover .side-bar-items ul li span {
+    opacity: 1;
+}
+
 .side-bar-content {
     color: aqua;
     text-align: center;
@@ -101,8 +106,17 @@ form input {
     margin-bottom: 1rem;
 }
 
+.side-bar-items ul {
+    margin-top: 2rem;
+}
+
 .side-bar-items ul li{
     list-style: none;
     text-align: start;
-    margin-bottom: 40%;
+    margin-bottom: 20%;
+}
+
+.side-bar-items ul li span {
+    transition: .3s ease-out;
+    opacity: 0;
 }
