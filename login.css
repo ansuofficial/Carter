@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background: rgb(5, 5, 14);
+}
+
 label {
     display: block;
 }
 
 .form-container {
     align-items: center;
+    background: rgb(244, 244, 247);
+
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -67,7 +73,7 @@ form input {
 /* Admin */
 
 .side-bar {
-    background: rgb(112, 112, 112);
+    background: rgb(27, 27, 27);
     height: 100vh;
     width: 10%;
     max-width: 50%;
@@ -119,4 +125,23 @@ form input {
 .side-bar-items ul li span {
     transition: .3s ease-out;
     opacity: 0;
+}
+
+
+/* Header */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header h1 {
+    color: white
+}
+
+.header-item {
+    margin: 2rem;
+    background: aqua;
+    width: 20%;
+    height: 100px
 }

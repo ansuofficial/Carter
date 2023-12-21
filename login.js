@@ -37,7 +37,7 @@ const displayAdmin = () => {
       <div class="side-bar-container">
         <div class="side-bar-content">
           <div>
-            <h1>Ansu</h1>
+            <h1>${userName.value}</h1>
             <div class="image-con">
               <img src="https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png" alt="Image">
             </div>
@@ -53,6 +53,15 @@ const displayAdmin = () => {
             </ul>
           </div>
         </div>
+      </div>
+     </div>
+
+     <div class="header">
+     <h1>Admin Dashboard</h1>
+      <div class="header-content">
+        <div class="header-item"></div>
+        <div class="header-item"></div>
+        <div class="header-item"></div>
       </div>
      </div>
      `;
