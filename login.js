@@ -57,11 +57,18 @@ const displayAdmin = () => {
      </div>
 
      <div class="header">
-     <h1>Admin Dashboard</h1>
       <div class="header-content">
-        <div class="header-item"></div>
-        <div class="header-item"></div>
-        <div class="header-item"></div>
+        <div class="header-item">
+          <h3>Registered students</h3>
+        </div>
+        <div class="header-item">
+           <div class="header-item">
+          <h3>Teachers</h3>
+        </div>
+        </div>
+        <div class="header-item">
+          <h3>Transactions</h3>
+        </div>
       </div>
      </div>
      `;
