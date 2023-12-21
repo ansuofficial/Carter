@@ -17,8 +17,10 @@ const data = [
   },
 ];
 
-let admin = document.querySelector("#admin")
-let form = document.querySelector("#form");
+const admin = document.querySelector("#admin")
+const form = document.querySelector("#form");
+const error = document.querySelector(".error");
+
 
 console.log(admin)
 const psw = document.querySelector("#password");
@@ -39,10 +41,15 @@ function handler() {
 
     if (result) {
      form.classList.toggle('hide')
-     admin.classList.toggle("hide");
+     admin.classList.toggle('hide')
+     let html = ` 
+     <h1>Ansumana</h1>
+     
+     `
+     admin.insertAdjacentHTML("afterbegin", html)
      
     } else {
-      console.log("try again");
+      error.classList.remove('hide')
     }
   });
 }
