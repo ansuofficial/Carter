@@ -65,7 +65,6 @@ const displayAdmin = () => {
            <div class="header-item">
           <h3>Teachers</h3>
         </div>
-        </div>
         <div class="header-item">
           <h3>Transactions</h3>
         </div>
