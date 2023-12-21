@@ -43,9 +43,28 @@ function handler() {
      form.classList.toggle('hide')
      admin.classList.toggle('hide')
      let html = ` 
-     <h1>Ansumana</h1>
-     
-     `
+     <div class="side-bar">
+      <div class="side-bar-container">
+        <div class="side-bar-content">
+          <div>
+            <h1>Ansu</h1>
+            <div class="image-con">
+              <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Image">
+            </div>
+          </div>
+          <div class="side-bar-items">
+          <h3>Pages</h3>
+            <ul>
+              <li>Add new user</li>
+              <li>Transaction history</li>
+              <li>Edit profile</li>
+              <li>Home</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     </div>
+     `;
      admin.insertAdjacentHTML("afterbegin", html)
      
     } else {

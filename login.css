@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 label {
     display: block;
 }
@@ -56,4 +62,53 @@ form input {
 
 .hide {
     display: none
+}
+
+/* Admin */
+
+.side-bar {
+    background: rgb(112, 112, 112);
+    height: 100vh;
+    width: 10%;
+    max-width: 50%;
+    transition: .2s ease-in;
+}
+
+.image-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 2rem;
+    border: 5px solid;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.image-con:hover {
+    border: 2px solid teal;
+}
+
+.image-con img {
+    width: 100%;
+}
+
+.side-bar:hover {
+    width: 20%;
+}
+
+.side-bar-content {
+    color: aqua;
+    text-align: center;
+}
+
+.side-bar-items {
+   padding: 2rem;
+}
+
+
+.side-bar-items ul li{
+    text-align: start;
+    margin-bottom: 40%;
 }
