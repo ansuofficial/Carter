@@ -62,7 +62,6 @@ const displayAdmin = () => {
           <h3>Registered students</h3>
         </div>
         <div class="header-item">
-           <div class="header-item">
           <h3>Teachers</h3>
         </div>
         <div class="header-item">
