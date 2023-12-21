@@ -60,12 +60,15 @@ const displayAdmin = () => {
       <div class="header-content">
         <div class="header-item">
           <h3>Registered students</h3>
+          <h1>+1500</h1>
         </div>
         <div class="header-item">
           <h3>Teachers</h3>
+          <h1>39</h1>
         </div>
         <div class="header-item">
           <h3>Transactions</h3>
+          <h1>+700</h1>
         </div>
       </div>
      </div>

@@ -144,11 +144,15 @@ form input {
 }
 
 .header-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     margin: 2rem;
     background: aqua;
     border-radius: 5px;
     color: rgb(5, 5, 14);
     text-align: center;
     width: 20%;
-    height: 100px
+    height: 100px;
+    padding: .5rem 2rem;
 }
