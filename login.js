@@ -49,7 +49,7 @@ function handler() {
           <div>
             <h1>Ansu</h1>
             <div class="image-con">
-              <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Image">
+              <img src="https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png" alt="Image">
             </div>
           </div>
           <div class="side-bar-items">

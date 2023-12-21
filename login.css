@@ -71,27 +71,17 @@ form input {
     height: 100vh;
     width: 10%;
     max-width: 50%;
+    padding: 2rem 0;
     transition: .2s ease-in;
 }
 
 .image-con {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: 2rem;
-    border: 5px solid;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
+    padding: 0 2rem;
 }
 
-.image-con:hover {
-    border: 2px solid teal;
-}
 
 .image-con img {
-    width: 100%;
+    width: 50%;
 }
 
 .side-bar:hover {
@@ -104,11 +94,15 @@ form input {
 }
 
 .side-bar-items {
-   padding: 2rem;
+   padding: 1.5rem 2rem;
 }
 
+.side-bar-items h3 {
+    margin-bottom: 1rem;
+}
 
 .side-bar-items ul li{
+    list-style: none;
     text-align: start;
     margin-bottom: 40%;
 }
