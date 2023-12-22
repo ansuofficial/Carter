@@ -161,3 +161,13 @@ form input {
     height: 100px;
     padding: .5rem 2rem;
 }
+
+/* INVOICE */
+
+.invoice-con h1 {
+    color: white;
+}
+
+.invoice-con {
+    border: 2px solid blue;
+}
