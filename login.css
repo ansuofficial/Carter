@@ -104,6 +104,10 @@ form input {
     text-align: center;
 }
 
+.side-bar-content h1 {
+    color: white;
+}
+
 .side-bar-items {
    padding: 1.5rem 2rem;
 }
@@ -145,7 +149,7 @@ form input {
 }
 
 .header h1 {
-    color: white
+    color: rgb(25, 25, 34)
 }
 
 .header-item {
@@ -153,9 +157,9 @@ form input {
     justify-content: space-between;
     flex-direction: column;
     margin: 2rem;
-    background: aqua;
+    background: rgb(1, 131, 131);
     border-radius: 5px;
-    color: rgb(5, 5, 14);
+    color: white;
     text-align: center;
     width: 20%;
     height: 100px;
@@ -169,5 +173,9 @@ form input {
 }
 
 .invoice-con {
-    border: 2px solid blue;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: auto;
+    width: 45%
 }
