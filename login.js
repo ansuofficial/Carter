@@ -72,6 +72,13 @@ const displayAdmin = () => {
         </div>
       </div>
      </div>
+
+     <div class="invoice-con">
+      <h1>Transactions</h1>
+      <div class="invoice-content">
+
+      </div>
+     </div>
      `;
   admin.insertAdjacentHTML("afterbegin", html);
 };

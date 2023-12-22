@@ -117,10 +117,15 @@ form input {
 }
 
 .side-bar-items ul li{
+    cursor: pointer;
     font-size: 1.5rem;
     list-style: none;
     text-align: start;
     margin-bottom: 20%;
+}
+
+.side-bar-items ul li span:hover {
+    color: aqua;
 }
 
 .side-bar-items ul li span {
