@@ -45,11 +45,11 @@ const displayAdmin = () => {
           <div class="side-bar-items">
           <h3>Pages</h3>
             <ul>
+              <li><i class="bi bi-person"></i> <span>Dashboard</span></li>
               <li><i class="bi bi-person"></i> <span>Add new user</span></li>
-              <li><i class="bi bi-person"></i> <span>Add new user</span></li>
-              <li><i class="bi bi-person"></i> <span>Add new user</span></li>
-              <li><i class="bi bi-person"></i> <span>Add new user</span></li>
-              <li><i class="bi bi-person"></i> <span>Add new user</span></li>
+              <li><i class="bi bi-person"></i> <span>Invoice</span></li>
+              <li><i class="bi bi-person"></i> <span>Students</li>
+              <li><i class="bi bi-person"></i> <span>Settings</span></li>
             </ul>
           </div>
         </div>
@@ -67,7 +67,7 @@ const displayAdmin = () => {
           <h1>39</h1>
         </div>
         <div class="header-item">
-          <h3>Transactions</h3>
+          <h3>Transactions history</h3>
           <h1>+700</h1>
         </div>
       </div>
@@ -76,7 +76,6 @@ const displayAdmin = () => {
      <div class="invoice-con">
       <h1>Transactions</h1>
       <div class="invoice-content">
-
       </div>
      </div>
      `;
@@ -86,7 +85,6 @@ const displayAdmin = () => {
 function handler() {
   submit.addEventListener("click", () => {
     const result = data.find((d) => {
-      console.log(d.role)
       if (userName.value == d.username && psw.value == d.id && d.role == "Admin") {
         return true;
       } else {
