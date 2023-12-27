@@ -1,3 +1,7 @@
+const t = (n) => {
+        return n**2
+      }
+      console.log(t(9119));
 
 const data = [
   {
@@ -21,8 +25,6 @@ const admin = document.querySelector("#admin")
 const form = document.querySelector("#form");
 const error = document.querySelector(".error");
 
-
-console.log(admin)
 const psw = document.querySelector("#password");
 const userName = document.querySelector("#username");
 
